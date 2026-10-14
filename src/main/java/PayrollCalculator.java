@@ -23,6 +23,17 @@ public class PayrollCalculator {
         System.out.println(name + " has worked " + hoursWorked + "hours" + " and their" +
                 " gross pay is: " + grossPay);
         System.out.printf("%s(hours worked: %.2f) $%.2f", name,hoursWorked, grossPay);
+        read.nextLine();
+
+        // Bonus
+        if (hoursWorked > 40) {
+            double overHours = hoursWorked - 40;
+            double overtime = 1.5;
+            double overpay = overHours * overtime;
+            double overGross = grossPay + overpay;
+            System.out.println("\nOvertime pay for " + name + " is " + overGross);
+
+        }
 
         read.close(); // Closing scanner
 
