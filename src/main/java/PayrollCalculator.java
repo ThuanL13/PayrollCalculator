@@ -16,13 +16,15 @@ public class PayrollCalculator {
         System.out.println("What is your pay rate?: ");
         double payRate = read.nextDouble();
 
+        // Calculating gross pay
         double grossPay = hoursWorked * payRate;
 
+        // Printing out results
         System.out.println(name + " has worked " + hoursWorked + "hours" + " and their" +
                 " gross pay is: " + grossPay);
         System.out.printf("%s(hours worked: %.2f) $%.2f", name,hoursWorked, grossPay);
 
-        read.close();
+        read.close(); // Closing scanner
 
     }
 }
