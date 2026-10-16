@@ -41,7 +41,7 @@ public class RefactoredPayrollCalculator {
             double totalPay = grossPay + overTimePay; // Calculating gross + overtime for total
             System.out.printf("Overtime pay for %s is: $%.2f%n", name, totalPay);
         }
-    read.close(); // Closing the scanner read
+    read.close(); // Closing the scanner "read"
     }
 
 }
